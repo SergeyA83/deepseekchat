@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: deepseek
+  ai:
+    deep-seek:
+      base-url: http://deepseek:11434
+      api-key: fake-key
+      model: deepseek-r1:1.5b
+  data:
+    mongodb:
+      uri: mongodb://mongodb/chat-db

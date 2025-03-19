@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "308cf3ea-0b5a-4a0b-aff8-e033d5ef7700",
+		"name": "springBootAiChat",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11316545"
+	},
+	"item": [
+		{
+			"name": "newChat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/chat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deepseekCall",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"chatId\": ,\r\n    \"model\": \"deepseek-chat\",\r\n    \"message\": \"Hi\",\r\n    \"maxCompetitionTokens\" : 1000,\r\n    \"temperature\": 0.7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/deepseek/call",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deepseek",
+						"call"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findChat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/chat/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAllChats",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/chat",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteChat",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/chat/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteAllChats",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/chat/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"chat",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
